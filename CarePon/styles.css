@@ -1,0 +1,181 @@
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(127, 155, 183);
+}
+
+#selecciona-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 20px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 190px;
+    height: 100px;
+    background: #1f334f;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.tarjeta-de-mokepon:hover{
+    box-shadow: 0 3px 10px #383d44;
+}
+
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#boton-mascota:hover{
+    color: rgb(127, 155, 183);
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 3px 10px #383d44;
+}
+
+#boton-reiniciar{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#boton-reiniciar:hover{
+    color: pink;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 3px 5px rgb(230, 182, 190);
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #1f334f; 
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.boton-de-ataque {
+    background: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#ver-mapa button:hover{
+    color: rgb(127, 155, 183);
+    background-color: #fff;
+}
+
+#mensajes {
+    width: 280px;
+    background: pink;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color:#11468F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+}
+
+#mapa {
+    border: 2px solid white;
+}
+
+#ver-mapa button {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
